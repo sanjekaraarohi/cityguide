@@ -1,0 +1,70 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+         <link rel="stylesheet" href="css/default.css">
+         
+    </head>
+    <body>
+       
+        <div id="header-wrapper">
+            <div id="header">
+		<div id="logo">
+			<h1><a href="#">CITYGUIDE</a></h1>
+		</div>
+            <div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="Register.html" accesskey="1" title="">Registration</a></li>
+				<li><a href="index.jsp" accesskey="2" title="">Home Page</a></li>
+                                
+				<li><a href="aboutus.html" accesskey="3" title="">About Us</a></li>
+				<li><a href="log2.jsp" accesskey="4" title="">Login</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+                
+     
+            </div>
+            <div class="container">
+    <section class="register">
+        <form action="InsertData" method="post">
+              <h1>Register Here</h1>
+              <div class="reg_section personal_info">
+              <h3>Your Personal Information</h3>
+              <h3>Name :</h3><input type= "text" name="username"  placeholder="Your name"/></input><br>
+              <h3>Email id :</h3><input type= "email"  name="emailid" placeholder="Your email"/></input><br>
+              <h3>Gender :</h3><input type="radio"   name="gender" value="Male" />Male</input><br>
+              <input type="radio"   name="gender" value="Female" />Female</input>
+              <br>
+              <h3>city :</h3>
+              <select name="city">
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Pune">Pune</option>
+                  <option value="indore">Indore</option>
+              </select>
+              
+             </div>
+            
+             <div class="reg_section password">
+                 <h3>Your Password :</h3>
+
+                 <input type= "password" name="password"   placeholder="Your Password"/><br>
+                 <input type= "password"  name="conpass" placeholder="Conform password"/><br>
+            
+             </div>
+              
+              <input type="submit"  value="register"/><br><br>
+             <div id ="star">
+                  <input type="checkbox">* I Agree</input>
+              </div>
+        </form>
+            </div>
+            <div id="footer" class="container">
+	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+</div>
+</body>
+</html>
+       
